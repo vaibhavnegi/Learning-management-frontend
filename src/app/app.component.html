@@ -1,26 +1,33 @@
 <header style="color: black ; text-align:center" >
-    <h1>Learning management Solution</h1>
+    <h1><b>Learning Management Solution</b></h1>
   </header>
   <div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <nav class="navbar navbar-expand-sm bg-light">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=2">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
       <div style=" font-size : 300" >
-        <a class="btn btn-dark" (click)="course()">course</a>
-        <a class="btn btn-dark" (click)="student()">student</a>
-        <a class="btn btn-dark" (click)="subject()">Subject</a>
-        <a class="btn btn-dark" (click)="teacher()">Teacher</a>
+        <a class="btn btn-light" (click)="course()"><b>Courses</b></a>
+        <a class="btn btn-light" (click)="student()"><b>Students</b></a>
+        <a class="btn btn-ligt" (click)="subject()"><b>Subjects</b></a>
+        <a class="btn btn-light" (click)="teacher()"><b>Teachers</b></a>
       </div>
     </nav>
     
     <div *ngIf="coursepage" style="color:black">
       <app-courses></app-courses>
     </div>
-    <div *ngIf="studentpage">
+    <div *ngIf="studentpage" style="color:black">
       <app-students></app-students>
     </div>
-    <div *ngIf="subjectpage">
+    <div *ngIf="subjectpage" style="color:black">
       <app-subjects></app-subjects>
     </div>
-    <div *ngIf="teacherpage">
+    <div *ngIf="teacherpage" style="color:black">
       <app-teachers></app-teachers>
     </div>
   </div>

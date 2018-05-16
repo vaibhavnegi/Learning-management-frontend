@@ -1,6 +1,6 @@
 <br>
 <div class="container">
-      Teachers List:
+      <b>List of Teachers:</b>
     <div class="card-body">
       <table class="table table-hover">
         <thead>
@@ -21,15 +21,15 @@
 </div>
 <br>
 <div class="container">
-      Add Teacher  
+     <b>Add Teacher:</b>
     <div class="panel-body">
       <form>
         <div class="form-group">
-          <label for="name">Teacher Name</label>
-          <input type="text" id="name" class="form-control" required #inp>
+          <label for="name"></label>
+          <input type="text" id="name" class="form-control" required #inp placeholder="Enter Teacher Name">
         </div>
         <select class="form-control" #courseId>
-          <option selected>Select Subject</option>
+          <option selected>please select a subject</option>
           <option *ngFor ="let c of subjectlist" [value]="c.id">{{c.name}}</option>
         </select>
         <br>
